@@ -134,7 +134,9 @@ while 1:
             users += 1
         if("PART" in line):
             users -= 1
-           #Add commands here. My bot is a weird anime maid, yours doesnt have to be. if a word is in a message, do something. You can also add "and user="twitchUSername", and it will respond only to that specific user.
+           #Add commands here. My bot is a weird anime maid, yours doesnt have to be.
+           #if a word is in a message, do something. You can also add "and user="twitchUSername", 
+           #and it will respond only to that specific user.
         if("!status" in message):
             s.send("PRIVMSG %s\r\n" % (channelog + " :Online and ready to serve, my master!"))
             
@@ -173,8 +175,6 @@ while 1:
         if("!wordcount" in message): 
             word = find_between(message,"@","%")
             WordCount(word)
-        if("!votefor 3" in message): 
-            s.send("PRIVMSG %s\r\n" % (channelog + " : !vote 3"))
         #if("ヽ༼ຈل͜ຈ༽ﾉ" in message):
          #   s.send("PRIVMSG %s\r\n" % (channelog + " : Hey, " + user+ " please don't post that donger shit. It makes us robots fucking hate you. <3"))
     message = ""
